@@ -1,7 +1,10 @@
 # Opencore-Dell-Drallion-7410-chrome
 Hackintosh macOS opencore config Dell Drallion 7410 chrome
 
+[中文说明](https://github.com/jarryson/Opencore-Dell-Drallion-7410-chrome/blob/main/README_zh.md) ｜ English
+
 Manual Configure: https://github.com/isi95010/DrallionMacOS
+
 Forum: https://forum.chrultrabook.com
 
 ## Specifications:
@@ -38,7 +41,9 @@ Forum: https://forum.chrultrabook.com
 | NVRAM              | Working              | Native NVRAM working with DevirtualiseMMIO set to False                                       |
                                                                           
 ## Versions Tested
+
 macOS 10.5 Catalina
+
 macOS 12.7.6 Monterey 
 
 ## How to use

@@ -1,0 +1,4 @@
+alc-verb 0x19 0x707 0x24
+
+https://github.com/isi95010/DrallionMacOS?tab=readme-ov-file
+

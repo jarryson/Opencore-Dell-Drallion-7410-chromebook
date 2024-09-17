@@ -22,7 +22,7 @@ Forum: https://forum.chrultrabook.com
 |--------------------|----------------------|-----------------------------------------------------------------------------------------------|
 | WiFi               | Working              | See [OpenIntelWireless](https://openintelwireless.github.io). Seems to work more reliably by Fixing DMAR.                            |
 | Bluetooth          | Working              | See [OpenIntelWireless](https://openintelwireless.github.io)                                                                         |
-| Sleep/Wake         | WIP              |                    |
+| Sleep/Wake         | Working              |                    |
 | Trackpad           | Working              | Works with newer commit of VoodooI2CElan. See section in [Input Devices](#input-devices).                       | 
 | Graphics Accel.    | Working              |                                                                                               |
 | Internal Speakers  | Working              | AppleALC.kext using layout-id 22 on Catalina+. Combo jack needs HDA Verb sent, IE `alc-verb 0x19 0x707 0x24`                            |
@@ -55,10 +55,24 @@ macOS 12.7.6 Monterey
 6. Copy macOS recovery files into USB disk.
 7. Reboot and Press ESC and select USB disk to boot.
 
+### Headphone Jack fix
+run alc-verb 0x19 0x707 0x24 ever time boot.
+or use install-alc-verb-fix.sh.
+
+### Keyboard & Remaps
+* F1 prev
+* F2 play
+* F3 next
+* F4 Spotlight
+* ChrOS search (caps lock position) -> left command
+* Globe key  -> caps
+PS: ChrOS search is command by default and seems not changable. you can try to change it by edit drallion-keymap.dsl.
+
 ## Note
 * OpenIntelWireless should be replaced for different macOS version.
 * Better not to change KEXT order.
 * You have to replace MLB, SN, UUID in config.plist.
+* Do NOT update VoodooI2C VoodooI2CELAN VoodooI2CHID cause it's patched version.
 
 ## Credits
 * Credit to [isi95010](https://github.com/isi95010/DrallionMacOS/) for all

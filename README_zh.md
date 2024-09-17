@@ -6,12 +6,12 @@ Hackintosh macOS opencore config Dell Drallion 7410 chrome
 
 ## 配置清单:
 
-- CPU: Intel i7 10610U Processor
-- MEM: 16gb of soldered RAM
+- CPU: Intel i7 10610U 4核心8线程 15w
+- MEM: 8G X 2 板载内存
 - GPU: Intel UHD620
-- SSD: 128G SAMSUNG need to be replaced
+- SSD: 128G SAMSUNG 自带的必须更换
 - WIFI: Intel AX201
-- SCREEN: 14inch flip-touchscreen. 
+- SCREEN: 14寸 可翻转触控屏幕. 
 
 ## 目前状态:
 
@@ -19,7 +19,7 @@ Hackintosh macOS opencore config Dell Drallion 7410 chrome
 |--------------------|----------------------|-----------------------------------------------------------------------------------------------|
 | 无线网络               | 正常              | See [OpenIntelWireless](https://openintelwireless.github.io). Seems to work more reliably by Fixing DMAR.                            |
 | 蓝牙          | 正常              | See [OpenIntelWireless](https://openintelwireless.github.io)                                                                         |
-| 睡眠         | 不正常              | 正在查找原因                   |
+| 睡眠         | 正常              |                    |
 | 触控板           | 正常              | Works with newer commit of VoodooI2CElan. See section in [Input Devices](#input-devices).                       | 
 | 显卡加速    | 正常              |                                                                                               |
 | 扬声器  | 正常              | AppleALC.kext using layout-id 22 on Catalina+. Combo jack needs HDA Verb sent, IE `alc-verb 0x19 0x707 0x24`                            |
@@ -29,7 +29,7 @@ Hackintosh macOS opencore config Dell Drallion 7410 chrome
 | 耳机孔     | 基本能用                  | Combo jack needs HDA Verb sent, IE `alc-verb 0x19 0x707 0x24`                                                             |
 | HDMI Audio         | 正常              |                                                                                               |
 | HDMI Video         | 正常              | Somewhat janky detecting displays but works in a roundabout way.                              |
-| USB          | 正常              | Working with USB mapping                                                                      |
+| USB          | 正常              | 已通过USBTOOLBOX定制                                                                      |
 | 摄像头             | 正常              | Working with USB mapping                                                                      |
 | 内置麦克风.      | 正常              | AppleALC.kext using layout-id 22 on Catalina+                                                             |
 | 关机/重启 | 正常              |                                                                                               |    
@@ -49,10 +49,26 @@ macOS 12.7.6 Monterey
 6. 下载 macOS 恢复文件，搜索如何制作macos recovery.
 7. 重启按ESC，选择U盘启动.
 
+### 耳机孔修复
+开机需要运行命令 alc-verb 0x19 0x707 0x24
+
+或者使用install-alc-verb-fix.sh安装一个plist，开启自动启动。
+
+### 键盘快捷键
+* F1为上一首
+* F2为播放
+* F3为下一首
+* F4为spotlight
+* F5-F9为定义的
+* 大写锁定位置的按键为command，🌍键为大写锁定（输入法切换）。
+
+注：大写锁定默认就是command，而且我试了很多次无法修改，所以只能这么设置，可以在系统设置中调换。可以自己修改drallion-keymap.dsl试试看。
+
 ## 注意
 * 因为OpenIntelWireless区分macOS版本，所以可能需要手动替换.
 * KEXT的顺序不要轻易变动，特别是VoodooI2C的.
 * 需要手动修改config.plist的 MLB、SN、UUID，可以使用opencore configure 或者hackintool  .
+* 请勿更新VoodooI2C的几个kext。这是打了补丁切自编译的。
 
 ## 感谢
 * Credit to [isi95010](https://github.com/isi95010/DrallionMacOS/) for all

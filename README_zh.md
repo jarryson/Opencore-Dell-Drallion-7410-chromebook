@@ -1,5 +1,5 @@
-# Opencore-Dell-Drallion-7410-chrome
-Hackintosh macOS opencore config Dell Drallion 7410 chrome
+# Opencore-Dell-Drallion-7410-chromebook
+Hackintosh macOS opencore config Dell Drallion 7410 chromebook
 
 手动配置: https://github.com/isi95010/DrallionMacOS
 论   坛: https://forum.chrultrabook.com
@@ -9,7 +9,7 @@ Hackintosh macOS opencore config Dell Drallion 7410 chrome
 - CPU: Intel i7 10610U 4核心8线程 15w
 - MEM: 8G X 2 板载内存
 - GPU: Intel UHD620
-- SSD: 128G SAMSUNG 自带的必须更换
+- SSD: ~~128G SAMSUNG~~自带的必须更换
 - WIFI: Intel AX201
 - SCREEN: 14寸 可翻转触控屏幕. 
 

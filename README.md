@@ -1,7 +1,7 @@
-# Opencore-Dell-Drallion-7410-chrome
-Hackintosh macOS opencore config Dell Drallion 7410 chrome
+# Opencore-Dell-Drallion-7410-chromebook
+Hackintosh macOS opencore config Dell Drallion 7410 chromebook
 
-[中文说明](https://github.com/jarryson/Opencore-Dell-Drallion-7410-chrome/blob/main/README_zh.md) ｜ English
+[中文说明](https://github.com/jarryson/Opencore-Dell-Drallion-7410-chromebook/blob/main/README_zh.md) ｜ English
 
 Manual Configure: https://github.com/isi95010/DrallionMacOS
 

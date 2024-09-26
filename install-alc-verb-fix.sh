@@ -26,5 +26,6 @@ cat > $Daemonfile << EOF
 </plist>
 EOF
 
+sudo install -m 755 alc-verb /usr/local/bin/alc-verb
 sudo install -m 644 $Daemonfile $DaemonDir/$Daemonfile
 sudo launchctl load $DaemonDir/$Daemonfile

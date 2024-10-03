@@ -25,9 +25,9 @@
 		<key>XHCI</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.dhinakg.USBToolBox.kext</string>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
 			<key>IOClass</key>
-			<string>USBToolBox</string>
+			<string>AppleUSBHostMergeProperties</string>
 			<key>IOMatchCategory</key>
 			<string>USBToolBox</string>
 			<key>IONameMatch</key>
@@ -152,6 +152,8 @@
 					</dict>
 				</dict>
 			</dict>
+			<key>model</key>
+			<string>MacBookAir9,1</string>
 		</dict>
 	</dict>
 	<key>OSBundleLibraries</key>

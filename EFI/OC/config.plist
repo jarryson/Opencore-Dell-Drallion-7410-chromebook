@@ -80,14 +80,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>For keyboard keys like display brightness</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>drallion-keymap.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>For GPIO pinning the touchpad (Needs _CRS to XCRS Rename)</string>
 				<key>Enabled</key>
 				<true/>
@@ -101,6 +93,14 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-screen.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>For keyboard keys like display brightness</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>drallion-keymap.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -394,7 +394,7 @@
 			<key>ResizeAppleGpuBars</key>
 			<integer>-1</integer>
 			<key>SetupVirtualMap</key>
-			<true/>
+			<false/>
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
@@ -442,28 +442,10 @@
 				<key>rps-control</key>
 				<data>AQAAAA==</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x3)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,20,3</string>
-				<key>model</key>
-				<string>Intel Wi-Fi 6 AX201</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,29,0/0,0</string>
-				<key>model</key>
-				<string>RTS525A PCI Express Card Reader</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,29,0</string>
 				<key>built-in</key>
 				<data>AQAAAA==</data>
-				<key>model</key>
-				<string>SSD</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
@@ -511,6 +493,42 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VirtualSMC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>ECEnabler.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/ECEnabler</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>USBMap.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -594,24 +612,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>ECEnabler.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/ECEnabler</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -648,7 +648,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>AirportItlwm-monterey.kext</string>
+				<string>AirportItlwm-Monterey.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -666,35 +666,17 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>USBToolBox.kext</string>
+				<string>AirportItlwm-Ventura.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBToolBox</string>
+				<string>Contents/MacOS/AirportItlwm</string>
 				<key>MaxKernel</key>
-				<string></string>
+				<string>22.99.99</string>
 				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>UTBMap.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
+				<string>22.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -981,7 +963,7 @@
 			<key>AppleXcpmForceBoost</key>
 			<false/>
 			<key>CustomSMBIOSGuid</key>
-			<true/>
+			<false/>
 			<key>CustomPciSerialDevice</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -1044,7 +1026,7 @@
 			<key>HibernateSkipsPicker</key>
 			<false/>
 			<key>HideAuxiliary</key>
-			<false/>
+			<true/>
 			<key>InstanceIdentifier</key>
 			<string></string>
 			<key>LauncherOption</key>
@@ -1062,7 +1044,7 @@
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
-			<true/>
+			<false/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
@@ -1153,45 +1135,12 @@
 			<false/>
 		</dict>
 		<key>Tools</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<string>Shutdown</string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Comment</key>
-				<string>Perform shutdown</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
-				<key>Name</key>
-				<string>Shutdown</string>
-				<key>Path</key>
-				<string>ResetSystem.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 	</dict>
 	<key>NVRAM</key>
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
-			<dict>
-				<key>DefaultBackgroundColor</key>
-				<data>AAAAAA==</data>
-			</dict>
-			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
-			<dict>
-				<key>rtc-blacklist</key>
-				<data></data>
-			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>ForceDisplayRotationInEFI</key>
@@ -1199,7 +1148,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v -lilubetaall -rtsfbeta hbfx-ahbm=1</string>
+				<string>-lilubetaall -rtsfbeta hbfx-ahbm=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1214,14 +1163,6 @@
 		</dict>
 		<key>Delete</key>
 		<dict>
-			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
-			<array>
-				<string>DefaultBackgroundColor</string>
-			</array>
-			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
-			<array>
-				<string>rtc-blacklist</string>
-			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
 				<string>boot-args</string>
@@ -1233,35 +1174,7 @@
 		<key>WriteFlash</key>
 		<true/>
 		<key>LegacySchema</key>
-		<dict>
-			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-			<array>
-				<string>EFILoginHiDPI</string>
-				<string>EFIBluetoothDelay</string>
-				<string>LocationServicesEnabled</string>
-				<string>SystemAudioVolume</string>
-				<string>SystemAudioVolumeDB</string>
-				<string>SystemAudioVolumeSaved</string>
-				<string>bluetoothActiveControllerInfo</string>
-				<string>bluetoothInternalControllerInfo</string>
-				<string>flagstate</string>
-				<string>fmm-computer-name</string>
-				<string>fmm-mobileme-token-FMM</string>
-				<string>fmm-mobileme-token-FMM-BridgeHasAccount</string>
-				<string>nvda_drv</string>
-				<string>prev-lang:kbd</string>
-				<string>backlight-level</string>
-				<string>BootCampHD</string>
-			</array>
-			<key>8BE4DF61-93CA-11D2-AA0D-00E098032B8C</key>
-			<array>
-				<string>Boot0080</string>
-				<string>Boot0081</string>
-				<string>Boot0082</string>
-				<string>BootNext</string>
-				<string>BootOrder</string>
-			</array>
-		</dict>
+		<dict/>
 	</dict>
 	<key>PlatformInfo</key>
 	<dict>
@@ -1299,7 +1212,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Custom</string>
+		<string>Create</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
@@ -1569,7 +1482,7 @@
 				<key>Comment</key>
 				<string>Fix black screen on wake from hibernation for Lenovo Thinkpad T490</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Size</key>
 				<integer>4096</integer>
 				<key>Type</key>

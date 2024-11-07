@@ -1,0 +1,21 @@
+diff -urN VoodooPS2Controller-old.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist
+--- VoodooPS2Controller-old.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist	2024-10-08 21:12:09
++++ VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist	2024-10-12 22:41:14
+@@ -290,6 +290,17 @@
+ 						<string>;Items must be strings in the form of scanfrom=scanto (in hex)</string>
+ 						<string>e027=0;disable discrete fnkeys toggle</string>
+ 						<string>e028=0;disable discrete trackpad toggle</string>
++						<string>e015=65;F5 -> F14 Brightness Down</string>
++						<string>e011=66;F6 -> F15 Brightness Up</string>
++						<string>e06a=67;F1 -> F16</string>
++						<string>e067=68;F2 -> F17</string>
++						<string>e055=69;F3 -> F18</string>
++						<string>e056=6a;F4 -> F19</string>
++						<string>e057=58;F12 -> F12</string>
++						<string>e00b=64;Mirror -> F13</string>
++						<string>e05b=3a;caps->caps</string>
++						<string>e054=38;global->alt</string>
++						<string>38=e05b;alt->command</string>
+ 					</array>
+ 					<key>HIDF12EjectDelay</key>
+ 					<integer>250</integer>

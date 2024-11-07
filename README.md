@@ -12,7 +12,7 @@ Forum: https://forum.chrultrabook.com
 - CPU: Intel i7 10610U Processor
 - MEM: 16gb of soldered RAM
 - GPU: Intel UHD620
-- SSD: 128G SAMSUNG need to be replaced
+- SSD: ~~128G SAMSUNG~~ need to be replaced
 - WIFI: Intel AX201
 - SCREEN: 14inch flip-touchscreen. 
 
@@ -72,7 +72,7 @@ PS: ChrOS search is command by default and seems not changable. you can try to c
 * OpenIntelWireless should be replaced for different macOS version.
 * Better not to change KEXT order.
 * You have to replace MLB, SN, UUID in config.plist.
-~~* Do NOT update VoodooI2C VoodooI2CELAN VoodooI2CHID cause it's patched version.~~
+* ~~Do NOT update VoodooI2C VoodooI2CELAN VoodooI2CHID cause it's patched version.~~
 * After boot you may see black screen, just turn off and turn on lid, or use SSDT-REG-LID0.aml. HDMI may not work or act strange, try to plug in twice HDMI cable or reboot.
 
 ## Credits

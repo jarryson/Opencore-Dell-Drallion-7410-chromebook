@@ -68,7 +68,7 @@ macOS 12.7.6 Monterey
 * 因为OpenIntelWireless区分macOS版本，所以可能需要手动替换.
 * KEXT的顺序不要轻易变动，特别是VoodooI2C的.
 * 需要手动修改config.plist的 MLB、SN、UUID，可以使用opencore configure 或者hackintool  .
-~~* 请勿更新VoodooI2C的几个kext。这是打了补丁切自编译的。~~
+* ~~请勿更新VoodooI2C的几个kext。这是打了补丁切自编译的。~~
 * 开机后logo进度条没走完可能遇到黑屏，因为盖子状态的问题，可以盒盖后再打开（或者启用ACPI文件夹下的SSDT-REG-LID0a.aml）。HDMI可能插上没反应，需要插两次。如果无法开启HDMI 4K 60hz，可能需要重启，启动的时候能看到外接显示器显示启动logo就应该没问题了，似乎是bios问题。
 
 ## 感谢

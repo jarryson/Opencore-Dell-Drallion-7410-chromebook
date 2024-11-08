@@ -69,7 +69,13 @@ macOS 12.7.6 Monterey
 * KEXT的顺序不要轻易变动，特别是VoodooI2C的.
 * 需要手动修改config.plist的 MLB、SN、UUID，可以使用opencore configure 或者hackintool  .
 * ~~请勿更新VoodooI2C的几个kext。这是打了补丁切自编译的。~~
-* 开机后logo进度条没走完可能遇到黑屏，因为盖子状态的问题，可以盒盖后再打开（或者启用ACPI文件夹下的SSDT-REG-LID0a.aml）。HDMI可能插上没反应，需要插两次。如果无法开启HDMI 4K 60hz，可能需要重启，启动的时候能看到外接显示器显示启动logo就应该没问题了，似乎是bios问题。
+
+
+## 以下可能是个例，仅供参考
+1. 冷启动如果不重启，第一次开机正常亮屏，但是HDMI会无法使用，重启就好了。重启会看到logo进度条即将走完会黑屏（以下简称“正常状态”），重新关上开启盖子就能唤醒机器。
+2. 推荐冷启动时看到开机logo后立刻按三键重启，进入“正常状态”，这时候HDMI就是正常的。
+3. 如果不外接屏幕，可以启用ACPI文件夹下的SSDT-REG-LID0a.aml和相应patch，这种情况下开机屏幕正常亮，可能偶尔无背光，只是HDMI只能最高4K@30，也无法进入“正常状态”。
+4. HDMI可能插上没反应，需要插两次。
 
 ## 感谢
 * Credit to [isi95010](https://github.com/isi95010/DrallionMacOS/) for all

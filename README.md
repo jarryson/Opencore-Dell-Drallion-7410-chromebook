@@ -75,6 +75,12 @@ PS: ChrOS search is command by default and seems not changable. you can try to c
 * ~~Do NOT update VoodooI2C VoodooI2CELAN VoodooI2CHID cause it's patched version.~~
 * After boot you may see black screen, just turn off and turn on lid, or use SSDT-REG-LID0.aml. HDMI may not work or act strange, try to plug in twice HDMI cable or reboot.
 
+## Maybe just for myself
+* HDMI won't work on cold start, need reboot. You can press CTRL + ALT + DEL immediately after you see the boot logo (rabbit) to quickly get in warm start.
+* Normally it will sleep immediately after boot, It's ok, just close and reopen the lid. And HDMI works.
+* It will not sleep immediately after boot on cold start (HDMI won't work).
+* You may need to plug in HDMI cable twice.
+
 ## Credits
 * Credit to [isi95010](https://github.com/isi95010/DrallionMacOS/) for all
 * Credit to [mine-man30000](https://github.com/mine-man3000/macOS-Dragonair) for the guide this is based on.

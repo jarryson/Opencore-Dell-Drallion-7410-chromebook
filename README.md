@@ -46,6 +46,8 @@ macOS 10.5 Catalina
 
 macOS 12.7.6 Monterey 
 
+macOS 13.7.8 Ventura
+
 ## How to use
 1. [Open Developer mode](https://docs.chrultrabook.com/docs/firmware/developer-mode.html)
 2. [Disabling Write Protect](https://docs.chrultrabook.com/docs/firmware/write-protect.html#disabling-write-protect)

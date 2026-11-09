@@ -44,7 +44,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-ASL0.aml</string>
+                    <string>SSDT-ALS0.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -72,11 +72,11 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>CPU thread def and plugin-type for power management</string>
+                    <string>Redefines modern CPU Devices as legacy Processor objects and sets plugin-type to 1 on the first</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-PLUG.aml</string>
+                    <string>SSDT-PLUG-ALT.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -98,7 +98,7 @@
                     <key>Comment</key>
                     <string>For keyboard keys like display brightness</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Path</key>
                     <string>drallion-keymap.aml</string>
                 </dict>
@@ -274,17 +274,17 @@
                 </dict>
                 <dict>
                     <key>Base</key>
-                    <string>\_SB.PCI0.I2C0.H00A</string>
+                    <string></string>
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
-                    <string>_CRS to XCRS in H00A for GPIO pinning of touchscreen</string>
+                    <string>H00A _CRS to XCRS Rename (touchscreen, I2C 0x0A)</string>
                     <key>Count</key>
                     <integer>1</integer>
                     <key>Enabled</key>
                     <true/>
                     <key>Find</key>
-                    <data>X0NSUw==</data>
+                    <data>CF9DUlMRMAssAI4eAAEAAQIAAAEGAIAaBgAKAA==</data>
                     <key>Limit</key>
                     <integer>0</integer>
                     <key>Mask</key>
@@ -292,7 +292,7 @@
                     <key>OemTableId</key>
                     <data>AAAAAA==</data>
                     <key>Replace</key>
-                    <data>WENSUw==</data>
+                    <data>CFhDUlMRMAssAI4eAAEAAQIAAAEGAIAaBgAKAA==</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -304,17 +304,17 @@
                 </dict>
                 <dict>
                     <key>Base</key>
-                    <string>\_SB.PCI0.I2C1.D015</string>
+                    <string></string>
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
-                    <string>_CRS to XCRS in H00A for GPIO pinning of touchpad</string>
+                    <string>D015 _CRS to XCRS Rename (touchpad, I2C 0x15)</string>
                     <key>Count</key>
                     <integer>1</integer>
                     <key>Enabled</key>
                     <true/>
                     <key>Find</key>
-                    <data>X0NSUw==</data>
+                    <data>CF9DUlMRMAssAI4eAAEAAQIAAAEGAIAaBgAVAA==</data>
                     <key>Limit</key>
                     <integer>0</integer>
                     <key>Mask</key>
@@ -322,7 +322,7 @@
                     <key>OemTableId</key>
                     <data>AAAAAA==</data>
                     <key>Replace</key>
-                    <data>WENSUw==</data>
+                    <data>CFhDUlMRMAssAI4eAAEAAQIAAAEGAIAaBgAVAA==</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -472,7 +472,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.1</string>
+                    <string>V1.7.2</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -490,7 +490,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.7</string>
+                    <string>V1.3.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -544,7 +544,7 @@
                     <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.7</string>
+                    <string>V1.3.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -562,7 +562,7 @@
                     <key>BundlePath</key>
                     <string>SMCLightSensor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.7</string>
+                    <string>V1.3.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -580,7 +580,7 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.7</string>
+                    <string>V1.3.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -598,7 +598,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.9.5</string>
+                    <string>V1.9.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -616,7 +616,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.0</string>
+                    <string>V1.7.1</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -706,7 +706,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.7.1</string>
+                    <string>V2.7.2</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -742,7 +742,7 @@
                     <key>BundlePath</key>
                     <string>VoodooInput.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.6</string>
+                    <string>V1.1.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1288,6 +1288,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>HideVerbose</key>
+                    <false/>
                     <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
@@ -1300,6 +1302,8 @@
                     <string>HFS+ Driver</string>
                     <key>Enabled</key>
                     <true/>
+                    <key>HideVerbose</key>
+                    <false/>
                     <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
@@ -1312,6 +1316,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>HideVerbose</key>
+                    <false/>
                     <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
@@ -1324,6 +1330,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>HideVerbose</key>
+                    <false/>
                     <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>

@@ -10,6 +10,8 @@ Manual Configure: <https://github.com/isi95010/DrallionMacOS>
 
 If you use old version BIOS, please update! <https://docs.mrchromebox.tech>
 
+modify BIOS CFR："Disable HECI1 at end of boot" to Disable，"Intel Management Engine" keep it Enable。video playback will fail after wakeup otherwise。
+
 ## Specifications:
 
 - CPU: Intel i7 10610U Processor

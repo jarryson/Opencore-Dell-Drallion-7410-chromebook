@@ -2,20 +2,19 @@
 
 Hackintosh macOS opencore config Dell Drallion 7410 chromebook
 
-手动配置: <https://github.com/isi95010/DrallionMacOS>  
-
-
-重要更新！！！
-
-如果你使用24年的BIOS，请更新UEFI BIOS，<https://docs.mrchromebox.tech>
-
-如果你使用24年的BIOS，请更新UEFI BIOS，<https://docs.mrchromebox.tech>
-
-如果你使用24年的BIOS，请更新UEFI BIOS，<https://docs.mrchromebox.tech>
+手动配置: <https://github.com/isi95010/DrallionMacOS>
 
 重要更新！！！
 
+如果你使用24年的BIOS，请更新UEFI BIOS，<https://docs.mrchromebox.tech>
 
+如果你使用24年的BIOS，请更新UEFI BIOS，<https://docs.mrchromebox.tech>
+
+如果你使用24年的BIOS，请更新UEFI BIOS，<https://docs.mrchromebox.tech>
+
+并且在BIOS **CFR**设置中&#x5C06;**`Disable HECI1 at end of boot`**&#x4FEE;改为**关闭，`Intel Management Engine`**&#x4FDD;持开启。否则视频硬件解码会卡死。
+
+重要更新！！！
 
 ## 配置清单:
 
@@ -79,15 +78,11 @@ macOS 13.7.6 Ventura
 - F4为spotlight
 - F5-F9为图标显示的
 
-
-
 ## 注意
 
 - 因为OpenIntelWireless区分macOS版本，所以可能需要手动替换.
 - KEXT的顺序不要轻易变动，特别是VoodooI2C的.
 - 需要手动修改config.plist的 MLB、SN、UUID，可以使用opencore configure 或者hackintool  .
-
-
 
 ## 以下可能是个例，仅供参考
 
